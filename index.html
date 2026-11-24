@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samiuzzaman Sahil — Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Samiuzzaman Sahil, a full-stack developer and Computer Science & Engineering student at Uttara University in Dhaka, Bangladesh. Projects, stack and contact."
+    />
+    <meta name="author" content="Samiuzzaman Sahil" />
+    <meta
+      name="keywords"
+      content="Samiuzzaman Sahil, Sami Sahil, full-stack developer, React developer, Node.js, Dhaka, Bangladesh, portfolio"
+    />
+    <meta name="theme-color" content="#faf7f3" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Samiuzzaman Sahil — Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack developer building clean, reliable web applications from database to interface."
+    />
+    <meta property="og:image" content="https://SamiSahil.github.io/portfolio/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Samiuzzaman Sahil — Full-Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack developer building clean, reliable web applications from database to interface."
+    />
+    <meta name="twitter:image" content="https://SamiSahil.github.io/portfolio/og.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark = stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", dark);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
