@@ -4,6 +4,7 @@ import {
   Check,
   Copy,
   Github,
+  Linkedin,
   Mail,
   MapPin,
   MessageSquare,
@@ -25,6 +26,12 @@ const rows = [
     value: `github.com/${profile.githubUser}`,
     href: profile.github,
     icon: Github,
+  },
+  {
+    label: "LinkedIn",
+    value: `in/${profile.linkedinUser}`,
+    href: profile.linkedin,
+    icon: Linkedin,
   },
   {
     label: "Location",

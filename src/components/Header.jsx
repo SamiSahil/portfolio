@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Github, Menu, Moon, Search, Sun, X } from "lucide-react";
+import { Github, Linkedin, Menu, Moon, Search, Sun, X } from "lucide-react";
 import { nav, profile } from "../data/content";
 import { useTheme } from "../hooks/useTheme";
 import { useActiveSection } from "../hooks/useTime";
@@ -78,6 +78,16 @@ export default function Header({ onOpenPalette }) {
             aria-label="GitHub profile"
           >
             <Github size={17} />
+          </a>
+
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden h-9 w-9 place-items-center rounded-full text-stone-500 transition hover:bg-white/60 hover:text-ink dark:text-stone-400 dark:hover:bg-white/[0.06] dark:hover:text-white sm:grid"
+            aria-label="LinkedIn profile"
+          >
+            <Linkedin size={16} />
           </a>
 
           <button

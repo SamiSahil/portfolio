@@ -1,4 +1,4 @@
-import { ArrowUp, Github, Mail } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
 import { nav, profile } from "../data/content";
 
 export default function Footer() {
@@ -54,6 +54,16 @@ export default function Footer() {
                     className="inline-flex items-center gap-1.5 text-[12.5px] text-stone-500 transition hover:text-copper dark:text-stone-400 dark:hover:text-copper-light"
                   >
                     <Github size={12} aria-hidden="true" /> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={profile.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-[12.5px] text-stone-500 transition hover:text-copper dark:text-stone-400 dark:hover:text-copper-light"
+                  >
+                    <Linkedin size={12} aria-hidden="true" /> LinkedIn
                   </a>
                 </li>
                 <li>

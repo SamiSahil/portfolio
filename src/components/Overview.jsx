@@ -2,7 +2,9 @@ import {
   Briefcase,
   Clock3,
   Github,
+  Globe,
   GraduationCap,
+  Linkedin,
   Mail,
   MapPin,
   ScanLine,
@@ -17,6 +19,8 @@ const icons = {
   location: MapPin,
   email: Mail,
   github: Github,
+  linkedin: Linkedin,
+  website: Globe,
   education: GraduationCap,
   time: Clock3,
 };

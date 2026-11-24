@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, FileText, Github, Mail } from "lucide-react";
+import { ArrowUpRight, Download, FileText, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/content";
 import Reveal from "./Reveal";
 
@@ -11,6 +11,13 @@ const socials = [
     href: profile.github,
     icon: Github,
     iconClass: "bg-ink text-white dark:bg-white dark:text-ink",
+  },
+  {
+    label: "LinkedIn",
+    value: "in/samiuzzaman-sahil",
+    href: profile.linkedin,
+    icon: Linkedin,
+    iconClass: "bg-[#0a66c2] text-white",
   },
   {
     label: "Email",
@@ -56,7 +63,7 @@ export default function ResumeConnect() {
         </div>
       </Reveal>
 
-      <div className="mt-3 grid gap-3 sm:grid-cols-3">
+      <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {socials.map((social, index) => {
           const Icon = social.icon;
           const external = social.href.startsWith("http");
@@ -66,14 +73,14 @@ export default function ResumeConnect() {
                 href={social.href}
                 target={external ? "_blank" : undefined}
                 rel={external ? "noreferrer" : undefined}
-                className="card group flex h-full items-center gap-3 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-copper/40 hover:shadow-lift dark:hover:border-copper-light/40"
+                className="card group flex h-full items-center gap-2.5 p-3.5 transition duration-200 hover:-translate-y-0.5 hover:border-copper/40 hover:shadow-lift dark:hover:border-copper-light/40"
               >
-                <span className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${social.iconClass}`}>
-                  <Icon size={17} aria-hidden="true" />
+                <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg ${social.iconClass}`}>
+                  <Icon size={16} aria-hidden="true" />
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-sm font-medium text-ink dark:text-white">{social.label}</span>
-                  <span className="mt-0.5 block truncate font-mono text-[11px] text-stone-500 dark:text-stone-400">
+                  <span className="block text-[13px] font-medium text-ink dark:text-white">{social.label}</span>
+                  <span className="mt-0.5 block truncate font-mono text-[10.5px] text-stone-500 dark:text-stone-400">
                     {social.value}
                   </span>
                 </span>

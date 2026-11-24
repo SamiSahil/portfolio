@@ -8,6 +8,7 @@ import {
   FolderGit2,
   Github,
   Hash,
+  Linkedin,
   Mail,
   Search,
 } from "lucide-react";
@@ -65,6 +66,14 @@ export default function CommandPalette({ open, onOpen, onClose }) {
         icon: Github,
         keywords: "github code repositories source",
         run: () => openExternal(profile.github),
+      },
+      {
+        id: "link-linkedin",
+        label: "LinkedIn profile",
+        hint: `in/${profile.linkedinUser}`,
+        icon: Linkedin,
+        keywords: "linkedin profile professional network resume hire",
+        run: () => openExternal(profile.linkedin),
       },
       {
         id: "link-email",
