@@ -74,11 +74,11 @@ export const projects = [
   },
   {
     id: "portfolio",
-    name: "Personal Portfolio",
-    subtitle: "Animated Developer Site",
+    name: "Portfolio v1",
+    subtitle: "First Developer Site",
     scope: "Frontend · Personal",
     description:
-      "A responsive personal portfolio with an animated hero, typewriter introduction and a clean showcase of selected work.",
+      "The first version of my personal site — an animated hero, typewriter introduction and a clean showcase of selected work.",
     tags: ["React", "Framer Motion", "Typewriter"],
     cover: "portfolio",
     accent: "#d99a6c",
